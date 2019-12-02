@@ -15,11 +15,10 @@
     </table>
     </div>
 </template>
+<script>
 
+</script>
 <style>
-body{
-    text-align: center;
-}
 .title{
     margin-top: 50px;
 }

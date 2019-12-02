@@ -37,9 +37,7 @@
 </script>
 
 <style>
-body{
-    text-align: center;
-}
+
 .login-form{
     margin-top: 150px;
 }
