@@ -1,6 +1,6 @@
-# worksystem
+# Work-management-system
 
-> My shining Nuxt.js project
+> My kryptonian Nuxt.js project
 
 ## Build Setup
 

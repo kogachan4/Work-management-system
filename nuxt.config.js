@@ -28,7 +28,6 @@ export default {
   ** Plugins to load before mounting the App
   */
   plugins: [
-    '~/plugins/element.js'
   ],
   /*
   ** Nuxt.js dev-modules
@@ -41,11 +40,7 @@ export default {
   modules: [
     // Doc: https://bootstrap-vue.js.org
     'bootstrap-vue/nuxt',
-    '@nuxtjs/axios',
   ],
-  axios: {
-    baseURL: ""
-  },
   /*
   ** Build configuration
   */

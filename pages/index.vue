@@ -3,10 +3,10 @@
     <div>
       <logo />
       <h1 class="title">
-        worksystem
+        Work-management-system
       </h1>
       <h2 class="subtitle">
-        My shining Nuxt.js project
+        My kryptonian Nuxt.js project
       </h2>
       <div class="links">
         <a

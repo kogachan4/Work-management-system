@@ -1,7 +1,7 @@
 {
-  "name": "worksystem",
+  "name": "Work-management-system",
   "version": "1.0.0",
-  "description": "My shining Nuxt.js project",
+  "description": "My kryptonian Nuxt.js project",
   "author": "kogachan4",
   "private": true,
   "scripts": {
@@ -11,10 +11,9 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
-    "bootstrap": "^4.1.3",
+    "nuxt": "^2.0.0",
     "bootstrap-vue": "^2.0.0",
-    "element-ui": "^2.13.0",
-    "nuxt": "^2.0.0"
+    "bootstrap": "^4.1.3"
   },
   "devDependencies": {}
 }
