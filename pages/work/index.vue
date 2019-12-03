@@ -1,72 +1,41 @@
 <template>
-  <div class="container">
-    <div>
-      <logo />
-      <h1 class="title">
-        worksystem
-      </h1>
-      <h2 class="subtitle">
-        My shining Nuxt.js project
-      </h2>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey"
-        >
-          GitHub
-        </a>
-      </div>
+<div>
+ <h2 class="title">今月の勤務状況</h2>
+    <button class="backbutton">戻る</button>
+    <button>次へ</button>
+    <table border="1">
+     <tr>
+     <th>出勤日数</th>
+            <td>8</td>
+        </tr>
+        <tr>
+            <th>勤務時間</th>
+            <td>    48</td>
+        </tr>
+    </table>
     </div>
-  </div>
 </template>
-
 <script>
-import Logo from '~/components/Logo.vue'
 
-export default {
-  components: {
-    Logo
-  }
-}
 </script>
-
 <style>
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+.title{
+    margin-top: 50px;
 }
-
-.title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
+button{
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-size:20px;
 }
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
+.backbutton{
+    margin-right: 680px;
 }
-
-.links {
-  padding-top: 15px;
+table{
+    margin:0 auto;
+    width:800px;
+    margin-bottom: 30px;
+}
+a{
+    text-decoration: none;
 }
 </style>
