@@ -1,26 +1,11 @@
 <template>
   <div>
-    <header>
-     <div id="header_inner">
-        <h1>
-            勤務
-        </h1>
-        <nav>
-         <ul>
-            <li><a href="#">勤怠ページへ</a></li>
-            <li><a href="#">MYページへ</a></li>
-            <li><a href="#">プロフィール画面</a></li>
-            <li><a href="#">各月勤務情報確認画面へ</a></li>
-         </ul>
-        </nav>
-     </div>
-    </header>
     <nuxt />
   </div>
 </template>
 
 <style>
-/* html {
+html {
   font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
     Roboto, 'Helvetica Neue', Arial, sans-serif;
   font-size: 16px;
@@ -30,7 +15,7 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
-} */
+}
 
 *,
 *:before,
@@ -66,41 +51,5 @@
 .button--grey:hover {
   color: #fff;
   background-color: #35495e;
-}
-
-header {
-        width: 100%;
-        height: 77px;
-        background-color: #fff;
-        border-bottom: 3px solid #f6ac4d;
-        padding-top: 10px;
-        padding-bottom: 30px;
-}
-div#header_inner {
-    width: 960px;
-    height: 52px;
-    margin: 0 auto;
-}
-h1 {
-    float: left;
-}
-
-
-nav {
-    font-size: 18px;
-    float: right;
-    margin-top: 30px;
-}
-ul{
-    list-style: none;
-}
-nav ul li {
-    float: left;
-    border-left: 1px dotted #434343;
-    padding-left: 20px;
-    margin-left: 20px;
-}
-a{
-    text-decoration: none;
 }
 </style>
