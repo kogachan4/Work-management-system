@@ -18,7 +18,7 @@
 <script>
 
 </script>
-<style>
+<style lang="stylus" scoped>
 .title{
     margin-top: 50px;
 }
