@@ -7,12 +7,12 @@
 
 </template>
 
-<style>
-h2{
-    margin-top: 30px;
-}
-.box{
-   width:300px;
-   margin:0 auto;
-}
+<script>
+
+</script>
+
+<style lang="scss" scoped>
+
+
 </style>
+

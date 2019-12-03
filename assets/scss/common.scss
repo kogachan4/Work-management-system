@@ -1,0 +1,13 @@
+@import "~/node_modules/bootstrap/scss/bootstrap.scss";
+@import "./mixins/variable";
+@import "./mixins/media";
+
+body {
+  font-family: "游ゴシック", "Yu Gothic", "游ゴシック体", "YuGothic", "Hiragino Sans", sans-serif;
+  font-weight: 500;
+  color: $clr-black;
+  font-size: 12px;
+  @include desktop {
+    font-size: 16px;
+  }
+}

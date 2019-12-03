@@ -35,10 +35,6 @@
     }
   }
 </script>
+<style lang="stylus" scoped>
 
-<style>
-
-.login-form{
-    margin-top: 150px;
-}
 </style>
