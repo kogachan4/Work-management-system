@@ -10,7 +10,7 @@
           <li><router-link to="../work">勤怠ページへ</router-link></li>
           <li><router-link to="../profile">MYページへ</router-link></li>
           <li><router-link to="../login">ログイン画面</router-link></li>
-          <li><router-link to="../worktime">各月勤務情報確認画面へ</router-link></li>
+          <li><router-link to="../worklist">各月勤務情報確認画面へ</router-link></li>
          </ul>
         </nav>
      </div>

@@ -1,7 +1,7 @@
 <template>
 <div class="container">
     <div class="h1">
-        <h2>1月の給料</h2>
+        <h2>11月の給料</h2>
     </div>
     <a href="work" class="btn btn-success">戻る</a>
     <table class="table table-dark">
@@ -28,6 +28,10 @@
     <tr>
         <th>出勤日数</th>
         <td>5日</td>
+    </tr>
+    <tr>
+        <th>給料</th>
+        <td>10000円</td>
     </tr>
     </table>
 </div>
