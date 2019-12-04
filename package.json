@@ -15,5 +15,8 @@
     "bootstrap-vue": "^2.0.0",
     "bootstrap": "^4.1.3"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "stylus": "^0.54.7",
+    "stylus-loader": "^3.0.2"
+  }
 }
