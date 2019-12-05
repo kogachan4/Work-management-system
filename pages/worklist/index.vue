@@ -45,6 +45,10 @@
                <th>11月</th>
                <td>10000円</td>
            </tr>
+           <tr>
+               <th>12月</th>
+               <td>10000円</td>
+           </tr>
        </table>
     </div>
 </template>
@@ -56,5 +60,8 @@
 <style lang="stylus" scoped>
 .container{
     max-width :640px;
+}
+.table{
+    margin-top:50px;
 }
 </style>
