@@ -1,5 +1,6 @@
 <template>
     <div class="container">
+      <h1 class="mt-3">各月の給料</h1>
 　　　　<table class="table table-hover">
           <tr>
               <th>1月</th>
@@ -62,6 +63,6 @@
     max-width :640px;
 }
 .table{
-    margin-top:50px;
+    margin-top:40px;
 }
 </style>
