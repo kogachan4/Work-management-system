@@ -6,7 +6,7 @@
         <a class="btn btn-success" href="workback">11月</a>
     </div>
     <div class="btn-right">
-        <a class="btn btn-primary" href="worknext">1月</a>
+        <a class="btn btn-primary ml-5" href="worknext">1月</a>
     </div>
   </div> 
     <table border="1" class="table">
