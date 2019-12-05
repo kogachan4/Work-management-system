@@ -11,7 +11,7 @@
   </div> 
     <table border="1" class="table">
      <tr>
-        <th>出勤日数</th>
+        <th>勤務日数</th>
         <td>8日</td>
      </tr>
      <tr>
@@ -46,8 +46,9 @@
     margin:0 auto;
 }
 .title{
-    margin-top: 50px;
     text-align :center;
+    margin-top :30px;
+    margin-bottom :30px;
 }
 .flex{
     display:flex;

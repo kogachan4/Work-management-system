@@ -1,5 +1,9 @@
 <template>
-   <div class="flip">
+ <div class="container">
+ <div> 
+      <a class="btn btn-secondary m-3 rounded" href="reprofile">編集する</a>
+  </div> 
+  <div class="flip">
   <div class="card"> 
     <div class="face front"> 
       <div class="details">
@@ -56,10 +60,10 @@
             </td></tr>
         </table>
       </div> 
-    </div> 
-      
-  </div> 
-</div> 
+    </div>
+  </div>
+  </div>
+ </div>
 </template>
 
 <script>
