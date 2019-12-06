@@ -13,7 +13,7 @@
         <hr>
         
         <div class="role">
-          フロントエンジニア
+          フロントエンドエンジニア
         </div>
         
         <div class="contact">
