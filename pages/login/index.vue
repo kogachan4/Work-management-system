@@ -24,7 +24,7 @@
 <script>
 
 </script>
-<<style lang="stylus" scoped>
+<style lang="stylus" scoped>
     body, html {
     height: 100%;
     background-repeat: no-repeat;
