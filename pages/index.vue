@@ -1,7 +1,7 @@
 <template>
 <div class="container">
 <body class="text-center">
-<h1 class="mt-3">勤務管理</h1>  
+<h1 class="mt-3">勤務管理</h1>
 <form class="form-signin">
   <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
   <label for="inputEmail" class="sr-only">Email address</label>
@@ -21,7 +21,12 @@
 </template>
 
 <script>
-
+import Header from '~/components/Header.vue'
+  export default {
+    components:{
+        Header
+    }
+  }
 </script>
 
 <style lang="stylus">
