@@ -70,7 +70,7 @@
 
 </script>
 
-<style lang="stylus" scoped>
+<style lang="scss" scoped>
 
 .flip {
   -webkit-perspective: 800;

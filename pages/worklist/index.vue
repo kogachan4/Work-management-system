@@ -58,7 +58,8 @@
 
 </script>
 
-<style lang="stylus" scoped>
+<style lang="scss" scoped>
+
 .container{
     max-width :640px;
 }

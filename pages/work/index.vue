@@ -40,14 +40,14 @@
 <script>
 
 </script>
-<style lang="stylus" scoped>
+<style lang="scss" scoped>
 
 .flex{
     display:flex;
     margin-bottom :30px;
 }
 .btn-right{
-    margin-left 450px;
+    margin-left :450px;
 }
 .b1{
     width:70px;
