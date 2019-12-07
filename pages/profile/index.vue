@@ -71,9 +71,7 @@
 </script>
 
 <style lang="stylus" scoped>
-.container{
-    max-width :640px;
-}
+
 .flip {
   -webkit-perspective: 800;
    width: 600px;

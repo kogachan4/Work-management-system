@@ -1,15 +1,15 @@
 <template>
 <div class="container">
- <h2 class="title">2019年12月の勤務状況</h2>
+ <h2 class="scsstitle">2019年12月の勤務状況</h2>
   <div class=flex>
     <div>
-        <a class="btn btn-success" href="workback">11月</a>
+        <a class="btn btn-success b1" href="workback">11月</a>
     </div>
     <div class="btn-right">
-        <a class="btn btn-primary ml-5" href="worknext">1月</a>
+        <a class="btn btn-primary b1" href="worknext">1月</a>
     </div>
   </div> 
-    <table border="1" class="table">
+    <table border="1" class="table scsstable">
      <tr>
         <th>勤務日数</th>
         <td>8日</td>
@@ -41,15 +41,7 @@
 
 </script>
 <style lang="stylus" scoped>
-.container{
-    max-width :640px;
-    margin:0 auto;
-}
-.title{
-    text-align :center;
-    margin-top :30px;
-    margin-bottom :30px;
-}
+
 .flex{
     display:flex;
     margin-bottom :30px;
@@ -57,7 +49,7 @@
 .btn-right{
     margin-left 450px;
 }
-.table{
-    text-align :center;
+.b1{
+    width:70px;
 }
 </style>

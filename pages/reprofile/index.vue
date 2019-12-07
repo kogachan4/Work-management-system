@@ -69,8 +69,6 @@ export default {
 
 </script>
 
-<style lang="stylus" scoped>
-.container{
-    max-width :640px;
-}
+<style lang="scss" scoped>
+
 </style>

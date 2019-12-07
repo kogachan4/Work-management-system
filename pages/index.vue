@@ -29,11 +29,6 @@ import Header from '~/components/Header.vue'
   }
 </script>
 
-<style lang="stylus">
-.container{
-  max-width :640px;
-}
-.h3{
-  margin-top :50px;
-}
+<style lang="scss" scoped>
+
 </style>
