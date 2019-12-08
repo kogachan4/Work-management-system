@@ -31,9 +31,8 @@ export default {
       },
       posts: [
         {
-          user: "mikakane",
-          comment: "Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.",
-          date: "01/01 11:00"
+          user: "",
+          comment: ""
         },
       ]
     }
