@@ -1,25 +1,25 @@
 <template>
-    <div class="container">
-     <div class="input-group m-3">
-        <div class="input-group-prepend">
+  <div class="container">
+      <div class="input-group m-3">
+          <div class="input-group-prepend">
             <span class="input-group-text" id="inputGroup-sizing-default">氏名</span>
-        </div>
-        <input type="text" name="name" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
-     </div>
-     <div class="input-group m-3">
+          </div>
+          <input type="text" name="name" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+      </div>
+      <div class="input-group m-3">
         <div class="input-group-prepend">
-            <span class="input-group-text" id="inputGroup-sizing-default">時給</span>
-        </div>
-        <input type="text" name="workmoney" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
-     </div>
+        <span class="input-group-text" id="inputGroup-sizing-default">時給</span>
+      </div>
+      <input type="text" name="workmoney" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+    </div>
     <div class="input-group m-3">
-        <div class="input-group-prepend">
-            <span class="input-group-text"  id="inputGroup-sizing-default">交通費</span>
-        </div>
-        <input type="text" name="money" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+      <div class="input-group-prepend">
+        <span class="input-group-text"  id="inputGroup-sizing-default">交通費</span>
+      </div>
+      <input type="text" name="money" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
     </div>
     <a href="profile" class="btn btn-success m-4">変更を保存する</a>
-   </div>
+  </div>
 </template>
 <script>
 export default {
