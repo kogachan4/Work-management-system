@@ -30,5 +30,8 @@ import Header from '~/components/Header.vue'
 </script>
 
 <style lang="scss" scoped>
-
+.btn{
+  width:300px;
+  margin-left: 135px;
+}
 </style>

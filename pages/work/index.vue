@@ -67,25 +67,4 @@
     width:70px;
 }
 
-dl{
-width:500px;
-list-style:none;
-border-top: 1px solid #999999;
-border-left: 1px solid #999999;
-border-right: 1px solid #999999;
-margin-left: 40px;
-}
-
-dt{
-clear:both;
-width:140px;
-float:left;
-margin-left: 150px;
-}
-
-dd{
-border-bottom: 1px solid #999999;
-padding:0 0 0 100px;
-}
-
 </style>
