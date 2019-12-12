@@ -1,24 +1,14 @@
 <template>
   <div class="container">
-      <div class="input-group m-3">
-          <div class="input-group-prepend">
-            <span class="input-group-text" id="inputGroup-sizing-default">氏名</span>
-          </div>
-          <input type="text" name="name" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
-      </div>
-      <div class="input-group m-3">
-        <div class="input-group-prepend">
-        <span class="input-group-text" id="inputGroup-sizing-default">時給</span>
-      </div>
-      <input type="text" name="workmoney" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
-    </div>
-    <div class="input-group m-3">
-      <div class="input-group-prepend">
-        <span class="input-group-text"  id="inputGroup-sizing-default">交通費</span>
-      </div>
-      <input type="text" name="money" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
-    </div>
-    <a href="profile" class="btn btn-success m-4">変更を保存する</a>
+   <form action="cgi-bin/formmail.cgi" method="post">
+    <label for="namae" accesskey="n" class="mt-5">名前：</label>
+    <input type="text" name="name" id="namae"><br>
+    <label for="money">時給：</label>
+    <input type="text" id="money"><br>
+    <label for="text">交通費：</label>
+    <input type="text" id="text">
+    <input type="submit" class="btn btn-dark mt-4" value="送信">
+   </form>
   </div>
 </template>
 <script>
@@ -69,5 +59,12 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
+.btn {
+  margin-left: 130px;
+  width:150px;
+}
+input {
+  width: 300px;
+  margin-bottom: 15px;
+}
 </style>
