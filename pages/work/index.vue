@@ -9,7 +9,10 @@
         <a class="btn btn-primary b1" href="worknext">1月</a>
     </div>
   </div> 
+  <div v-for="question in questions" :key="question.step">
+      <p>{{question.title}}</p>
     <working />
+  </div>  
  </div>
 </template>
 <script>
@@ -17,6 +20,25 @@ import working from '~/components/working.vue'
 export default{
     components:{
         working
+    },
+    data (){
+        return{
+            step:0,
+            questions:[
+                {
+                    step:1,
+                    title: "12月"
+                },
+                {
+                    step:2,
+                    title:"1月"
+                },
+                {
+                    step:3,
+                    title:"2月"
+                }
+            ]
+        }
     }
 }
 </script>
