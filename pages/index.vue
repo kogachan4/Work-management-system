@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-      <h1 class="mt-3 mb-5">勤務管理</h1>
+    <h1 class="mt-3 mb-5">勤務管理</h1>
       <form  class="form-signin">
         <label for="Email" class="sr-only">Email address</label>
         <input type="text"  id="Email" class="form-control input" placeholder="email" name="email">
@@ -12,6 +12,9 @@
 </template>
 
 <script>
+
+export default {
+}
 </script>
 
 <style lang="scss" scoped>
