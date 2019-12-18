@@ -26,6 +26,14 @@
       },
       // ...
     },
+    computed: {
+      user () {
+          return this.$store.state.user
+      },
+      posts () {
+          return this.$store.state.posts
+      },
+    },
     mounted() {
       firebase.auth().onAuthStateChanged(user => {
         if(user){
