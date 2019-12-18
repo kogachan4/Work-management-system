@@ -10,7 +10,7 @@
     </div>
   </div> 
   <div v-for="question in questions" :key="question.step">
-      <p>{{question.title}}</p>
+      <p style="text-align:center;">{{question.title}}</p>
     <working />
   </div>  
  </div>

@@ -12,9 +12,28 @@
 </template>
 
 <script>
+  import firebase from '~/service/firebase'
 
-export default {
-}
+  export default {
+    // ...
+    methods: {
+      async login () {
+        const provider = new firebase.auth.GithubAuthProvider()
+        const result = await firebase.auth().signInWithPopup(provider)
+        // var token = result.credential.accessToken
+        var user = result.user
+        this.$store.dispatch("loginWithUserName", user.displayName)
+      },
+      // ...
+    },
+    mounted() {
+      firebase.auth().onAuthStateChanged(user => {
+        if(user){
+          this.$store.dispatch("loginWithUserName", user.displayName)
+        }
+      })
+    },    
+  }
 </script>
 
 <style lang="scss" scoped>
