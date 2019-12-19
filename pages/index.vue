@@ -4,12 +4,12 @@
       <p>読み込み中</p>
     </div>
     <div v-else>
-      <div v-if="!isLogin">
-        <button @click="googleLogin">Googleでログイン</button>
+      <div v-if="!isLogin" class="log">
+        <button @click="googleLogin" class="mt-5 btn btn-dark">Googleでログイン</button>
       </div>
       <div v-else>
         <p>{{ user.email }}でログイン中</p>
-        <button @click="logOut">ログアウト</button>
+        <button @click="logOut" class="btn btn-dark">ログアウト</button>
       </div>
     </div>
   </section>
@@ -57,5 +57,13 @@ export default {
 }
 .input{
   width:400px;
+}
+p {
+  margin-top: 100px;
+  font-size: 30px;
+  margin-bottom: 50px;
+}
+.log {
+  margin-top: 100px;
 }
 </style>
