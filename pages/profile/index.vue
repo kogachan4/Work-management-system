@@ -1,5 +1,6 @@
 <template>
  <div class="container">
+   <Header />
  <div> 
       <a class="btn btn-secondary m-3 rounded" href="reprofile">編集する</a>
   </div> 
@@ -15,7 +16,12 @@
 </template>
 
 <script>
-
+import Header from '~/components/header.vue'
+export default {
+  components: {
+    Header
+  }
+}
 </script>
 
 <style lang="scss" scoped>

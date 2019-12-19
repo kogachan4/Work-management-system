@@ -1,5 +1,6 @@
 <template>
 <div class="container">
+ <Header />    
  <h2 class="scsstitle">2019年12月の勤務状況</h2>
   <div class=flex>
     <div>
@@ -17,9 +18,11 @@
 </template>
 <script>
 import working from '~/components/working.vue'
+import Header from '~/components/header.vue'
 export default{
     components:{
-        working
+        working,
+        Header
     },
     data (){
         return{
