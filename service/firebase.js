@@ -13,5 +13,4 @@ if (!firebase.apps.length) {
     measurementId: "G-8TP4H49Y4N"
   };
   firebase.initializeApp(config);}
-
 export default firebase

@@ -4,13 +4,12 @@
  <div> 
       <a class="btn btn-secondary m-3 rounded" href="reprofile">編集する</a>
   </div> 
-  <div class="center">
-    <h2 class="mt-4">koga</h2>
-    <h2>コーダー</h2>
+  <div class="center" v-for="mypage in mypages" :key="mypage.step">
+    <h2 class="mt-4">{{name}}</h2>
     <h2>時給</h2>
-    <p>1000円</p>
+    <p>{{money}}円</p>
     <h2>交通費</h2>
-    <p>1000円</p>
+    <p>{{transport}}円</p>
   </div>
  </div>
 </template>
@@ -20,6 +19,25 @@ import Header from '~/components/header.vue'
 export default {
   components: {
     Header
+  },
+  data () {
+    return {
+      name: "古賀",
+      money: "1000",
+      transport: "1000",
+      step: 0,
+      mypages: [ 
+        {
+        step:1
+      },
+      {
+        step:2
+      },
+      {
+        step:3
+      }
+      ]
+    }
   }
 }
 </script>

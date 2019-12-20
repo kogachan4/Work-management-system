@@ -11,7 +11,6 @@
   import firebase from '~/service/firebase'
 
   export default {
-    
     methods: {
       async login () {
         const provider = new firebase.auth.GithubAuthProvider()
@@ -19,6 +18,11 @@
         // var token = result.credential.accessToken
         var user = result.user
         this.$store.dispatch("loginWithUserName", user.displayName)
+      }
+    },
+    computed: {
+      user() {
+        return this.$store.state.user
       }
     },
     mounted(){
