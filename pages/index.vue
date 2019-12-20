@@ -1,69 +1,35 @@
 <template>
-  <section class="container">
-    <div v-if="isWaiting">
-      <p>読み込み中</p>
-    </div>
-    <div v-else>
-      <div v-if="!isLogin" class="log">
-        <button @click="googleLogin" class="mt-5 btn btn-dark">Googleでログイン</button>
-      </div>
-      <div v-else>
-        <p>{{ user.email }}でログイン中</p>
-        <button @click="logOut" class="btn btn-dark">ログアウト</button>
-      </div>
-    </div>
-  </section>
+  <div class="container">
+      <h1 class="mt-3 mb-5">勤務管理</h1>
+        <div v-if="!user">
+          <a class="btn btn-light btn-block" tabindex="" @click="login">ログイン</a>
+        </div>
+  </div>
 </template>
 
 <script>
-import firebase from '@/plugins/firebase'
+  import firebase from '~/service/firebase'
 
-export default {
-  asyncData () {
-    return {
-      isWaiting: true,
-      isLogin: false,
-      user: []
-    }
-  },
-  mounted: function () {
-    firebase.auth().onAuthStateChanged(user => {
-      this.isWaiting = false
-      if (user) {
-        this.isLogin = true
-        this.user = user
-      } else {
-        this.isLogin = false
-        this.user = []
+  export default {
+    
+    methods: {
+      async login () {
+        const provider = new firebase.auth.GithubAuthProvider()
+        const result = await firebase.auth().signInWithPopup(provider)
+        // var token = result.credential.accessToken
+        var user = result.user
+        this.$store.dispatch("loginWithUserName", user.displayName)
       }
-    })
-  },
-  methods: {
-    googleLogin () {
-      const provider = new firebase.auth.GoogleAuthProvider()
-      firebase.auth().signInWithRedirect(provider)
     },
-    logOut () {
-      firebase.auth().signOut()
-    }
+    mounted(){
+      firebase.auth().onAuthStateChanged(user => {
+        if(user){
+          this.$store.dispatch("loginWithUserName", user.displayName)
+        }
+      })
+    }   
   }
-}
 </script>
 
 <style lang="scss" scoped>
-.btn{
-  width:300px;
-  margin-left: 40px;
-}
-.input{
-  width:400px;
-}
-p {
-  margin-top: 100px;
-  font-size: 30px;
-  margin-bottom: 50px;
-}
-.log {
-  margin-top: 100px;
-}
 </style>

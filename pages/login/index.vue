@@ -5,8 +5,8 @@
         <label for="Email" class="sr-only">Email address</label>
         <input type="text"  id="Email" class="form-control input" placeholder="email" name="email">
         <label for="Password" class="sr-only">Password</label>
-        <input type="text" v-model="password" id="Password" class="form-control input mb-4" placeholder="password" name="password">
-        <a class="btn btn-light btn-block" tabindex="" @click="login">ログイン</a>
+        <input type="text" id="Password" class="form-control input mb-4" placeholder="password" name="password">
+        <a class="btn btn-light btn-block">ログイン</a>
       </form>
   </div>
 </template>
