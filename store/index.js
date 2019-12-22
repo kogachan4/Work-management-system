@@ -1,9 +1,11 @@
 export const state = () => {
     return {
+      displayName:'Akiyoshi Koga',
       user: null,
       posts: [
           {
-            user: ""
+            user: "",
+            message: "Hello"
           }
       ]
     }

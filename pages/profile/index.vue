@@ -5,7 +5,7 @@
       <a class="btn btn-secondary m-3 rounded" href="reprofile">編集する</a>
   </div> 
   <div class="center" v-for="mypage in mypages" :key="mypage.step">
-    <h2 class="mt-4">{{user}}</h2>
+    <h2 class="mt-4">{{$store.state.displayName}}</h2>
     <h2>時給</h2>
     <p>{{money}}円</p>
     <h2>交通費</h2>
@@ -24,7 +24,6 @@ export default {
   },
   data () {
     return {
-      user:"koga",
       money: "1000",
       transport: "1000",
       step:0,
